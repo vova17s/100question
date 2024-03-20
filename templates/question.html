@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/stylehomepage.css">
+    </head>
+    <body>
+        <h1>Категория: {{sheet}}<h1>
+        <h2>Вопрос</h2>
+        <p>ФИО: {{full_name}}</p>
+        <p>Работа: {{job}}</p>
+        <p>Должность: {{post}}</p>
+        <p>Вопрос: {{question}}</p>
+        <p>Осталось вопросов в данной категории: {{count_question}}</p>
+        {% if count_question != 0 %}
+            <form action='/question/', method='POST'>
+                <button type='submit' name='sheet', value='{{sheet}}'>Еще вопрос из данной категории</button>
+            </form>
+        {% endif %}
+        <a href='/home'>Вернуться к перечню категорий</a>
+    </body>
+</html>
