@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
